@@ -1,0 +1,15 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "capula-secure-vault"
+version = "1.0.0"
+description = "Secure password vault backup API and demonstration client"
+requires-python = ">=3.11"
+dependencies = [
+    "cryptography==50.0.1",
+]
+
+[tool.setuptools.packages.find]
+include = ["secure_vault*"]
